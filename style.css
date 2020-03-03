@@ -6,8 +6,10 @@
 }
 
 .heading1{
-    text-align: center;
+    margin-left: 25%;
     margin-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
     
 }
 
@@ -105,4 +107,44 @@
 
 .blogText{
   padding: 5px;
+}
+
+/* home page with dynamic bg */
+
+.login-btn{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  width: 160px;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  font-size: 20px;
+  color: #111;
+  background: white;
+  justify-content: center;
+}
+
+.sub-head{
+  
+   text-align: center;
+  margin-top: 300px;
+}
+.layout {
+  padding:0;
+  margin:0;
+  overflow:hidden;
+height: 600px;
+}
+canvas {
+  padding:0;
+  margin:0;
+}
+div.btnbg {
+  position:fixed;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
 }
