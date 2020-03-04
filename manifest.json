@@ -1,0 +1,40 @@
+{
+  "name": "Imbued",
+  "short_name": "Imbued",
+  "icons": [
+    {
+      "src": "./icons/48x47.png",
+      "type": "image/png",
+      "sizes": "48x47"
+    },
+    {
+      "src": "/icons/96x95.png",
+      "type": "image/png",
+      "sizes": "96x95"
+    },
+    {
+      "src": "/icons/144x143.png",
+      "type": "image/png",
+      "sizes": "144x143"
+    },
+    {
+      "src": "/icons/192x191.png",
+      "type": "image/png",
+      "sizes": "192x191"
+    },
+    {
+      "src": "/icons/256x255.png",
+      "type": "image/png",
+      "sizes": "256x255"
+    }
+   
+  ],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff",
+  "theme_color": "#3f51b5",
+  "dir": "ltr",
+  "lang": "en-US"
+}

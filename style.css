@@ -5,6 +5,17 @@
     
 }
 
+.home-layout{
+  /* margin: 5px;
+    padding: 5px; */
+    
+    background-image: url("./icons/yoga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+}
+
 .heading1{
     text-align: center;
     margin-top: 150px;
@@ -17,10 +28,12 @@
     margin: 10px;
 }
 
-/* .chatbot{
-  /* margin-top: 150px; */
+.chatbot{
+  margin-top: 10px;
   
-} */
+  
+}
+
 
 /* The side navigation menu */
 .sidenav {
