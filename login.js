@@ -1,6 +1,6 @@
 var fname = document.getElementById('fname');
 var lname = document.getElementById('lname');
-var email= document.getElementById('email');
+var emailid= document.getElementById('emailid');
 var pw= document.getElementById('pw');
 var number= document.getElementById('number');
 var age= document.getElementById('age');
@@ -9,7 +9,7 @@ var age= document.getElementById('age');
 function store() {
     localStorage.setItem('fname', fname.value);
     localStorage.setItem('lname', lname.value);
-    localStorage.setItem('email', email.value);
+    localStorage.setItem('emailid', emailid.value);
     localStorage.setItem('pw', pw.value);
     localStorage.setItem('number', number.value);
     localStorage.setItem('age', age.value);
@@ -19,7 +19,7 @@ function store() {
 function checkin() {
 
     // stored data from the register-form
-    var storedEmail = localStorage.getItem('email');
+    var storedEmailid = localStorage.getItem('emailid');
 
     var storedPw = localStorage.getItem('pw');
 
@@ -28,7 +28,7 @@ function checkin() {
     var userPw = document.getElementById('InputPassword1');
 
     // check if stored data from register-form is equal to data from login form
-    if(userName.value == storedEmail || userPw.value == storedPw) {
+    if(userName.value == storedEmailid || userPw.value == storedPw) {
         alert('You are logged in.');
     }else {
         alert('ERROR');
