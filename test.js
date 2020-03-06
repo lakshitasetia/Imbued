@@ -49,14 +49,51 @@
 // depression: 3,5,10,13,16,17,21
 
 function store(){
-    document.getElementById("result").innerHTML = ""; 
-   
+    document.getElementById("result").innerHTML="" ; 
     var ele = document.getElementsByTagName('input'); 
-    
+
+    // var val1= ele[0].value;
+    // alert
+    // var val6 = parseInt(document.getElementsByName("q6").value);
+    //                 var val8 = parseInt(document.getElementsByName("q8").value);
+	// 	            var val11 = parseInt(document.getElementsByName("q11").value);
+    //                 var val12 = parseInt(document.getElementsByName("q12").value);
+	// 	            var val14 = parseInt(document.getElementsByName("q14").value);
+    //                 var val18 = parseInt(document.getElementsByName("q18").value);
+   var stress=0;
+   var dep=0;
+   var anxiety=0;
+
+   var val1=0;
+    var val2=0;
+    var val3=0;
     for(i = 0; i < ele.length; i++) { 
-            if(ele[i].checked) 
-                document.getElementById("result").innerHTML 
-                        += ele[i].name + " Value: " 
-                        + ele[i].value + "<br>"; 
+            if(ele[i].checked) {
+                // document.getElementById("result").innerHTML 
+                //         += ele[i].name + " Value: " 
+                //         + ele[i].value + "<br>"; 
+                if(ele[i].name=="q1"|| ele[i].name=="q6"|| ele[i].name=="q8"||ele[i].name=="q11"||ele[i].name=="q12"||ele[i].name=="q14"||ele[i].name=="q18")
+                {
+                    val1+= parseInt(ele[i].value);
+                 
+                }
+
+                else if(ele[i].name=="q2"|| ele[i].name=="q4"|| ele[i].name=="q7"||ele[i].name=="q9"||ele[i].name=="q15"||ele[i].name=="q19"||ele[i].name=="q20")
+               {
+                   val2+= parseInt(ele[i].value);
+               }
+
+               else if(ele[i].name=="q3"|| ele[i].name=="q5"|| ele[i].name=="q10"||ele[i].name=="q13"||ele[i].name=="q16"||ele[i].name=="q17"||ele[i].name=="q21")
+               {
+                   val3+= parseInt(ele[i].value);
+               }
+            }
+
+
         } 
+        stress= val1*2;
+        dep= val2*2;
+        anxiety= val3*2;
+        document.getElementById("result").innerHTML="Stress: " +stress +"</br>"+"Depression: "+dep+"</br>"+"Anxiety: "+anxiety;
+
 }
