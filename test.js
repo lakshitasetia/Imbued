@@ -63,6 +63,9 @@ function store(){
    var stress=0;
    var dep=0;
    var anxiety=0;
+   var stress_rate="";
+   var dep_rate="";
+   var anxiety_rate="";
 
    var val1=0;
     var val2=0;
@@ -92,8 +95,43 @@ function store(){
 
         } 
         stress= val1*2;
+        if(stress<=14)
+            stress_rate= "Your Stress is Normal"
+        if(stress>=15 && stress<=18)
+            stress_rate="You take mild stress"
+        if(stress>=19 && stress<=25)
+            stress_rate="You take moderate stress"
+        if(stress>=26 && stress<=33)
+            stress_rate= "Your stress is severe"
+        if(stress>33)
+            stress_rate="Your stress rate is extremely severe."
         dep= val2*2;
+        if(dep<=9)
+            dep_rate= "Your Depression is Normal"
+        if(dep>=10 && dep<=13)
+            dep_rate="You have mild depression"
+        if(dep>=14 && dep<=20)
+            dep_rate="You have moderate depression"
+        if(dep>=21 && dep<=27)
+            dep_rate= "Your depression is severe"
+        if(dep>28)
+            dep_rate="Your depression rate is extremely severe."
         anxiety= val3*2;
-        document.getElementById("result").innerHTML="Stress: " +stress +"</br>"+"Depression: "+dep+"</br>"+"Anxiety: "+anxiety;
+        if(anxiety<=14)
+            anxiety_rate= "Your anxiety is Normal"
+        if(anxiety>=15 && anxiety<=18)
+            anxiety_rate="You have mild anxiety"
+        if(anxiety>=19 && anxiety<=25)
+            anxiety_rate="You have moderate anxiety"
+        if(anxiety>=26 && anxiety<=33)
+            anxiety_rate= "Your anxiety is severe"
+        if(anxiety>33)
+            anxiety_rate="Your anxiety rate is extremely severe."
+        
+
+
+        document.getElementById("result").innerHTML="Stress: " +stress +"</br>"+"Depression: "+dep+"</br>"+"Anxiety: "+anxiety+
+        "</br>"+stress_rate+"</br>"+dep_rate+"</br>"+anxiety_rate ;
+
 
 }
