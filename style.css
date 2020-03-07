@@ -92,6 +92,19 @@
 }
 
 /* blog page chips*/
+
+.bg-img{
+  background-image: url(./icons/blogbg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-heading{
+  color: #111;
+  
+}
+
 .chip {
   display: inline-block;
   padding: 0 25px;
