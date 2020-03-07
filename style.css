@@ -102,7 +102,16 @@
 
 .blog-heading{
   color: #111;
-  
+
+}
+
+.blog-box{
+  height: 200px;
+  width: 100%;
+  background-color: #eadca6 ;
+  overflow: auto;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .chip {
