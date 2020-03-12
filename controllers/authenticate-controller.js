@@ -1,5 +1,5 @@
-var Cryptr = require('cryptr');
-cryptr = new Cryptr('myTotalySecretKey');
+// var Cryptr = require('cryptr');
+// cryptr = new Cryptr('myTotalySecretKey');
  
 var connection = require('./../config');
 module.exports.authenticate=function(req,res){
@@ -16,8 +16,8 @@ module.exports.authenticate=function(req,res){
       }else{
        
         if(results.length >0){
-  decryptedString = cryptr.decrypt(results[0].password);
-            if(password==decryptedString){
+  // decryptedString = cryptr.decrypt(results[0].password);
+            if(password==req.body.password){
                 res.json({
                     status:true,
                     message:'successfully authenticated'
