@@ -4,8 +4,8 @@ var bodyParser=require('body-parser');
 var connection = require('./config');
 var app = express();
  
-var authenticateController=require('./controllers/authenticate-controller');
-var registerController=require('./controllers/register-controller');
+var authenticateController=require('./controllers/authenticate-controller.js');
+var registerController=require('./controllers/register-controller.js');
  
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -19,20 +19,20 @@ app.get('/login.html', function (req, res) {
 })  
  
 /* route to handle login and registration */
-app.post('/api/register',registerController.register);
-app.post('/api/authenticate',authenticateController.authenticate);
+app.post('./signup.html',registerController.register);
+app.post('./login.html',authenticateController.authenticate);
  
 console.log(authenticateController);
 app.post('/controllers/register-controller', registerController.register);
 app.post('/controllers/authenticate-controller', authenticateController.authenticate);
 app.listen(8072);
 
-app.get('/signup.html', function (req, res) {  
+app.post('/signup.html', function (req, res) {  
     res.sendFile( __dirname + "/" + "signup.html" );  
  })  
  
 
-app.get('/login.html', function (req, res) {  
+app.post('/login.html', function (req, res) {  
     res.sendFile( __dirname + "/" + "login.html" );  
  })  
  

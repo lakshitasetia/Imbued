@@ -10,33 +10,33 @@
     <body>
         <div class="container-fluid login-layout">
             <div class="heading1"><h2>Sign Up</h2></div>
-            <form method="POST" action="/controllers/register-controller">
+            <form method="POST" action="./controllers/register-controller">
                 <div class="form-row rowstyle">
                   <div class="col">
-                    <input type="text" id="fname" class="form-control" placeholder="First name" value="" required >
+                    <input type="text" id="fname" class="form-control" name="fname" placeholder="First name" value="" required >
                   </div>
                   <div class="col">
-                    <input type="text" id="lname" class="form-control" placeholder="Last name" value="" required>
+                    <input type="text" id="lname" class="form-control" name="lname" placeholder="Last name" value="" required>
                   </div>
                 </div>
                 <div class="form-row rowstyle">
                     <div class="col">
-                        <input type="email" id="emailid" class="form-control" placeholder="Email" value="" required>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Email" value="" required>
                     </div>
                 </div>
 
                 <div class="form-row rowstyle">
                     <div class="col">
-                        <input type="password" id="pw" class="form-control" placeholder="Password" value="" required>
+                        <input type="password" id="password" class="form-control" name="password" placeholder="Password" value="" required>
                     </div>
                 </div>
 
                 <div class="form-row rowstyle">
                     <div class="col">
-                        <input type="number" id="number" pattern="[0-9]{10}" class="form-control" placeholder="Mobile" value="" required>
+                        <input type="number" id="mobile" pattern="[0-9]{10}" name="mobile" class="form-control" placeholder="Mobile" value="" required>
                     </div>
                     <div class="col">
-                        <input type="number" id="age" min="18" class="form-control" placeholder="Age" value="" required> 
+                        <input type="number" id="age" min="18" class="form-control" name="age" placeholder="Age" value="" required> 
                     </div>
                 </div>
                 <div class="form-row rowstyle">

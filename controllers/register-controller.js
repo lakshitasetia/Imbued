@@ -15,17 +15,23 @@ module.exports.register=function(req,res){
         "age":req.body.age
        
     }
+
+    console.log(req.body);
+    // console.log(req.body.fname);
+    // console.log(users.fname);
+
     connection.query('INSERT INTO users SET ?',users, function (error, results, fields) {
       if (error) {
         res.json({
             status:false,
-            message:'there are some error with query'
+            message:`there are some error with query ${error}`
         })
       }else{
           res.json({
             status:true,
             data:results,
             message:'user registered sucessfully'
+
         })
       }
     });
