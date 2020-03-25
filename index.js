@@ -23,7 +23,10 @@ app.post('./signup.html',registerController.register);
 app.post('./login.html',authenticateController.authenticate);
  
 console.log(authenticateController);
-app.post('/controllers/register-controller', registerController.register);
+app.post('/controllers/register-controller', registerController.register, function(req, res)
+{
+   res.sendfile(__dirname+"/"+"login.html");
+});
 app.post('/controllers/authenticate-controller', authenticateController.authenticate);
 app.listen(8072);
 

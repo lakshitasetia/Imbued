@@ -29,7 +29,7 @@ module.exports.register=function(req,res){
         })
       }else{
 
-        res.redirect('https://distracted-wozniak-b3867f.netlify.com/login.html');
+        // res.redirect('https://distracted-wozniak-b3867f.netlify.com/login.html');
        
       }
     });
