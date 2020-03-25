@@ -1,6 +1,7 @@
 // var Cryptr = require('cryptr');
 var express=require("express");
 var connection = require('./../config');
+var http= require("http");
 // cryptr = new Cryptr('myTotalySecretKey');
  
 module.exports.register=function(req,res){
@@ -27,12 +28,9 @@ module.exports.register=function(req,res){
             message:`there are some error with query ${error}`
         })
       }else{
-          res.json({
-            status:true,
-            data:results,
-            message:'user registered sucessfully'
 
-        })
+        res.redirect('https://distracted-wozniak-b3867f.netlify.com/login.html');
+       
       }
     });
 }

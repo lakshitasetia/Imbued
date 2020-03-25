@@ -1,7 +1,9 @@
 // var Cryptr = require('cryptr');
 // cryptr = new Cryptr('myTotalySecretKey');
+
  
 var connection = require('./../config');
+var http= require("http");
 module.exports.authenticate=function(req,res){
     var email=req.body.email;
     var password=req.body.password;
@@ -17,12 +19,11 @@ module.exports.authenticate=function(req,res){
        
         if(results.length >0){
   // decryptedString = cryptr.decrypt(results[0].password);
-            if(password==req.body.password){
-                res.json({
-                    status:true,
-                    message:'successfully authenticated'
-                })
-            }else{
+        pwd= results[0].password;
+            if(pwd==req.body.password){
+              res.redirect('https://distracted-wozniak-b3867f.netlify.com/home.html');
+                }
+            else{
                 res.json({
                   status:false,
                   message:"Email and password does not match"
@@ -33,7 +34,7 @@ module.exports.authenticate=function(req,res){
         else{
           res.json({
               status:false,    
-            message:"Email does not exits"
+            message:"Email does not exists"
           });
         }
       }
