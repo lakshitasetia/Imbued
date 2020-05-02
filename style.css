@@ -12,6 +12,11 @@
  
 }
 
+.card{
+    border-radius: 1.25rem !important;
+    margin: 5px;
+}
+
 .first-card{
   top: 20px !important;
     display: -ms-flexbox;
@@ -23,7 +28,8 @@
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    border-radius: 1.25rem;
+    margin: 5px;
 }
 
 .home-layout{
@@ -292,4 +298,19 @@ animation: move-wave 3s;
 }
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
+}
+
+.play{
+  background-color: #f8f3eb !important;
+  color: #111 !important;
+  border-color: #111 !important;
+  border-radius: 1rem !important;
+}
+
+.pause{
+  
+  background-color: #ffbcbc !important;
+  color: #111 !important;
+  border-color: #111 !important;
+  border-radius: 1rem !important;
 }
