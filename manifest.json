@@ -3,29 +3,29 @@
   "short_name": "Imbued",
   "icons": [
     {
-      "src": "./icons/48x47.png",
+      "src": "./icons/48x48.png",
       "type": "image/png",
-      "sizes": "48x47"
+      "sizes": "48x48"
     },
     {
-      "src": "/icons/96x95.png",
+      "src": "/icons/96x96.png",
       "type": "image/png",
-      "sizes": "96x95"
+      "sizes": "96x96"
     },
     {
-      "src": "/icons/144x143.png",
+      "src": "/icons/144x144.png",
       "type": "image/png",
-      "sizes": "144x143"
+      "sizes": "144x144"
     },
     {
-      "src": "/icons/192x191.png",
+      "src": "/icons/192x192.png",
       "type": "image/png",
-      "sizes": "192x191"
+      "sizes": "192x192"
     },
     {
-      "src": "/icons/256x255.png",
+      "src": "/icons/256x256.png",
       "type": "image/png",
-      "sizes": "256x255"
+      "sizes": "256x256"
     }
    
   ],
