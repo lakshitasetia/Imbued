@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cryptr": "^6.0.1",
+    "express": "^4.17.1",
+    "forever": "^2.0.0",
+    "forever-monitor": "^2.0.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "repository": {
     "type": "git",
@@ -17,14 +25,5 @@
   "bugs": {
     "url": "https://github.com/lakshitasetia/Imbued/issues"
   },
-  "homepage": "https://github.com/lakshitasetia/Imbued#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cryptr": "^6.0.1",
-    "express": "^4.17.1",
-    "forever": "^2.0.0",
-    "forever-monitor": "^2.0.0",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.2"
-  }
+  "homepage": "https://github.com/lakshitasetia/Imbued#readme"
 }
