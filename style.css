@@ -121,7 +121,7 @@
 /* blog page chips*/
 
 .bg-img{
-  background-image: url(./icons/blogbg.jpg);
+  background-image: url(./icons/blog.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,7 +135,7 @@
 .blog-box{
   height: 200px;
   width: 100%;
-  background-color: #eadca6 ;
+  background-color: #faf2f2 ;
   overflow: auto;
   color: #111;
   font-family: Arial, Helvetica, sans-serif;
