@@ -5,32 +5,53 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b22f5d2f58.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
        
     </head>
     
         
-        <body>
-
-            <div class="waveWrapper waveAnimation">
-                <div class="waveWrapperInnerpodcast bgTop">
-                  <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
-
-                </div>
-                <div class="waveWrapperInnerpodcast bgMiddle">
-                  
-                    <div class="heading1"><h2>This Podcast talks about treating depression</h2></div>
-                  <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-                </div>
-                <div class="waveWrapperInnerpodcast bgBottom">
-                  
-                  <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-                </div>
-
+        <body style="background-color: #faf2f2;">
+          <div class="login-layout chatbot">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./home.html">Home</a>
+                <a href="./test.html">Test</a>
+                <a href="./blog.html">Blogs</a>
+                <a href="./Meditation.html">Meditation</a>
+                <a href="#">Podcast</a>
+                <a href="./help.html">Help</a>
+                <a href="./feedback.html">Feedback</a>
               </div>
-
               
-            <embed src="./icons/AUD-20200306-WA0010 (online-audio-converter.com).mp3" autostart="true" loop="true"
-            width="2" height="0">
-        </embed>
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><i class="fas fa-brain fa-2x"></i></span>
+
+          <h2 style="text-align: center; padding: 20px;">Podcast</h2>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Depression</h5>
+              <p class="card-text">This podcast talks about ways of treating depression</p>
+              <a href="./podcast1.html" class="btn btn-primary pause">Play</a>
+            </div>
+          </div> 
+          
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Food and Nutrition</h5>
+              <p class="card-text">This podcast talks about useful tips on Food and Nutrition during Self Quarantine</p>
+              <a href="./podcast2.html" class="btn btn-primary pause">Play</a>
+            </div>
+          </div> 
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Depression</h5>
+              <p class="card-text">This podcast talks about ways of treating depression</p>
+              <a href="./podcast1.html" class="btn btn-primary pause">Play</a>
+            </div>
+          </div> 
+
+          <script src="./script.js"></script>
           </body>
 </html>
